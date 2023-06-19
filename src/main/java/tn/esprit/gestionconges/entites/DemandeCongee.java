@@ -9,6 +9,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.security.SecureRandom;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -39,4 +40,8 @@ public class DemandeCongee  implements Serializable {
     private Date date_validation ;
 
     private int confirmed ;
+
+    @OneToMany(mappedBy = "demandeCongees")
+    private Set<Users> users ;
 }
+
