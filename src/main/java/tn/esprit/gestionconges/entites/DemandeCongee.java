@@ -19,7 +19,7 @@ import java.util.Set;
 public class DemandeCongee  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idUser ;
+    private Long idDemande ;
     private String title ;
     private String description ;
     @Enumerated(EnumType.STRING)
@@ -41,7 +41,8 @@ public class DemandeCongee  implements Serializable {
 
     private int confirmed ;
 
-    @OneToMany(mappedBy = "demandeCongees")
-    private Set<Users> users ;
+
+    @ManyToOne
+    private Users users ;
 }
 

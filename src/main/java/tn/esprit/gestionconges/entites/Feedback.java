@@ -22,8 +22,8 @@ public class Feedback implements Serializable {
     private String  description ;
     @Temporal(TemporalType.DATE)
     private Date date_feed ;
-    @OneToMany(mappedBy = "feedback ")
-    private Set<Users> users ;
+    @ManyToOne
+    private Users users ;
 }
 
 

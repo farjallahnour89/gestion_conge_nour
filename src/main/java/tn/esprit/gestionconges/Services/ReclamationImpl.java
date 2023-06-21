@@ -1,12 +1,10 @@
-package tn.esprit.gestionconges.ServicesImpl;
+package tn.esprit.gestionconges.Services;
 
-import org.apache.catalina.User;
+import org.springframework.stereotype.Service;
 import tn.esprit.gestionconges.Repository.ReclamationRepo;
 import tn.esprit.gestionconges.Repository.UserRepo;
-import tn.esprit.gestionconges.Service.Ireclamation;
-import tn.esprit.gestionconges.entites.Reclamation;
-import tn.esprit.gestionconges.entites.Users;
-
+import tn.esprit.gestionconges.Services.Ireclamation;
+@Service
 public class ReclamationImpl implements Ireclamation {
     ReclamationRepo reclamationRepo ;
     UserRepo userRepo ;
