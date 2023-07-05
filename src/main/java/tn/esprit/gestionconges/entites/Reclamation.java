@@ -23,5 +23,5 @@ public class Reclamation  implements Serializable  {
     @Column(name = "created_at") @Temporal(TemporalType.TIMESTAMP) private Date createdAt = new Date();
     @Column(name = "updated_at") @Temporal(TemporalType.TIMESTAMP) private Date updatedAt = new Date();
     @ManyToOne
-    private Users users ;
+    private User users ;
 }

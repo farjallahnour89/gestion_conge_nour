@@ -23,7 +23,7 @@ public class Feedback implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date date_feed ;
     @ManyToOne
-    private Users users ;
+    private User users ;
 }
 
 

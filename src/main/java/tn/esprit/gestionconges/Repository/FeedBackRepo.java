@@ -6,7 +6,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import tn.esprit.gestionconges.entites.DemandeCongee;
 import tn.esprit.gestionconges.entites.Feedback;
-import tn.esprit.gestionconges.entites.Users;
+import tn.esprit.gestionconges.entites.User;
 
 @Repository
 public interface FeedBackRepo extends JpaRepository<Feedback, Long> {

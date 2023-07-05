@@ -43,6 +43,6 @@ public class DemandeCongee  implements Serializable {
 
 
     @ManyToOne
-    private Users users ;
+    private User users ;
 }
 
